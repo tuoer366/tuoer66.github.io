@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" charset="utf-8" >
+	const url = new URL(window.location.href);
+	if (!url.searchParams.has('_t')) {
+	  url.searchParams.append('_t', Date.now());
+	  window.location.replace(url.toString());
+	}
+	</script>
+	<title>密码访问</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" src="//crossfb-70080.picnjc.qpic.cn/g.52000000-r.e620f/1689913526652_hf_0"></script>
+</head>
+<body>
+	
+	<form onsubmit="return checkPassword()">
+		<h1 align="center" style=" 
+                    font-size: 25px; 
+                    color:#152c5b; 
+                    font-weight:bold;
+                     margin-bottom: 20px;
+                    ">输入密码解锁此网址</h1>
+        <p align="center" style="
+                    color:#7f8da0;  
+                    font-size: 15px;
+                    margin-bottom: 40px;
+                    ">此网址的访问受到限制，请输入密码进行查看</p>
+		
+		<input type="password" id="password" name="password">
+		<button type="submit" class="btn btn-primary" style=" margin-bottom: 20px;">解锁</button>
+		
+	</form>
+	<div style="text-align: center;">
+  <h5><a href="https://y.gtimg.cn/music/photo_new/T053XD001rLa0y3aBI5Z.png">密码获取详细教程</a></h5>
+  <h3><a>↓ 获取密码方法 ↓</a></h3>
+  <div style="display: flex; justify-content: center;">
+    <img style="max-width: 60%; height: auto;" src="https://y.gtimg.cn/music/photo_new/T053XD003mWH0l3t3gcX.png" alt="暂无图片">
+  </div>
+  <p style="text-align: center;"><a>长按图片保存用VX扫一扫二维码<br>点击右下角详情，观看广告后自动复制密码！</a></p>
+</div>
+
+	<script>
+		function checkPassword() {
+			var password = document.getElementById("password").value;
+			if (password === "9655") { 
+				window.location.href = "http://sola-img.oss-cn-shEnzhen.aliYuncs.com/userfiles/picture/2023/PUGXGWJITZ-6505765057?G=kuais,Share&key=466280445c3b244a594a6c5099cb94ad298ce03b911a3cd09ddd72024b05ba0f6d88c2fa57591cfe76e99c98752da1649b0f4e157b62afa662968b0430eb44feaa7eeeeaa3c2d17aa13757fd1b30e82e6728ce1ac8a5599138e784aa387623f01857d0498795ea0d2b6083ae16f8128712157c15e62d2761eaf7d897d0c5e8c31d8b90548d5658f69495ba5a9c13c980abc71677ff17173ac50bea26f83ae3fb651f870ea85e06c67eff5096a2d55cdb2f44cd4c1b7adf23264d21051f309cc937e382be384c56109866b15e158116ef9b7c71f064be5444b24f70e278401185&8v20230810"; 
+				return false;
+			} else {
+				alert("密码错误，请重新输入！");
+				return false;
+			}
+		}
+	</script>
+	
+	</body>
+</html>
